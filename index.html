@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roblox Password Manager</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<div class="container" id="loginContainer">
+    <h2>Enter Password</h2>
+    <input type="password" id="masterPassword" placeholder="Master Password">
+    <button onclick="login()">Login</button>
+    <p id="loginError" style="color:red; display:none;">Incorrect password!</p>
+</div>
+
+<div class="container hidden" id="appContainer">
+    <h2>Your Accounts</h2>
+    <div id="accountsList"></div>
+    <input type="text" id="accountName" placeholder="Account Name">
+    <input type="text" id="accountPassword" placeholder="Password">
+    <button onclick="addAccount()">Add Account</button>
+    <button onclick="logout()">Logout</button>
+</div>
+
+</body>
+</html>
